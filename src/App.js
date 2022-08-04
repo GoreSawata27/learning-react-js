@@ -1,25 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
 
+import React  from 'react'
+import Addition from './Components/Addition';
+
+import ContextOne from './Components/ContextOne';
+import { UserProvider } from './Components/ContextUser';
+import Conditionalrendering from './Components/Conditionalrendering';
+import Eventtextchange from './Components/Eventtextchange';
+import FetchAxiosUseEffect from './Components/FetchAxiosUseEffect';
+import Handelstatebind from './Components/Handelstatebind';
+import HookUseEffect from './Components/HookUseEffect';
+
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    < >
+
+      <div className="Appp">
+
+        <Addition />
+        <UserProvider value='Gore'>
+          <Conditionalrendering />
+        <ContextOne />
+        </UserProvider>
+        <Eventtextchange />
+        <FetchAxiosUseEffect />
+        <Handelstatebind />
+        <HookUseEffect/>
+       
+      </div>
+      
+
+    </>
+
+  )
 }
 
 export default App;
