@@ -17,7 +17,6 @@ const reducer = (state, action) => {      // 4
     }
 
 }
-
 export default function UseReducerFC() {
 
     const [count, dispatch] = useReducer(reducer, initialstate);  //2      6

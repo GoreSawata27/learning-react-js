@@ -1,4 +1,4 @@
-.Appp{
+/* .App{
     text-align: center;
 }
 
@@ -14,4 +14,12 @@ button{
     justify-content: center;
     align-items: center;
 }
-
+td , th{
+    border: 2px solid black;
+}
+tab > table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+} */

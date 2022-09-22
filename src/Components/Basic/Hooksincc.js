@@ -9,7 +9,7 @@ export default class extends Component {
     }
     changemassage() {
         this.setState({
-            massage: "changed :)"
+            massage: "Subscribed :)"
         })
     }
 
