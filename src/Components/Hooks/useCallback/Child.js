@@ -1,15 +1,15 @@
 import React from 'react'
-const child = ()=>{
-    console.log("child Called")
-}
+import { memo } from 'react'
 
- function Child({countTwo}) {
+ function Child({fn}) {
+
+  console.log("child Called")
+
   return (
     <div>
         
-      <h1>useCallBack Hook</h1>
     </div>
   )
 }
 
-export default Child
+export default  memo(Child)
